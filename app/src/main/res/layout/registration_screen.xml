@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#13172C"
+    android:padding="10dp"
+    tools:context=".RegistrationScreen">
+
+    <Button
+        android:id="@+id/buttonRegistrationCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="564dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:onClick="goBrowsingScreen"
+        android:padding="10dp"
+        android:text="Create account"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonWelcomeDiscord"
+        app:layout_constraintEnd_toEndOf="@+id/buttonWelcomeDiscord"
+        app:layout_constraintStart_toStartOf="@+id/buttonWelcomeDiscord"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textRegistrationVersion"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="version 1.0.0"
+        android:textAlignment="center"
+        android:textColor="#a6a8b5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/buttonLoginCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:onClick="goLoginFromRegistrationScreen"
+        android:text="Do you have an account ?"
+        android:textAlignment="center"
+        android:textColor="#a6a8b5"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegistrationCreateAccount"
+        app:layout_constraintEnd_toEndOf="@+id/textLoginVersion"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="@+id/textLoginVersion"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/textRegistrationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Please enter your account details"
+        android:textAlignment="center"
+        android:textColor="#FDFDFD"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editRegistrationTextEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/textWelcomeDescription"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textWelcomeDescription"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintBounds" />
+
+    <EditText
+        android:id="@+id/editRegistrationTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#FDFDFD"
+        app:layout_constraintBottom_toTopOf="@+id/editRegistrationTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Email"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editRegistrationTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLoginCreateAccount"
+        app:layout_constraintEnd_toEndOf="@+id/editRegistrationTextEmailAddress"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@+id/editRegistrationTextEmailAddress"
+        tools:text="Password" />
+
+    <ImageView
+        android:id="@+id/imageRegistration"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="2dp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/burevestnik"
+        tools:ignore="ContentDescription,MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
