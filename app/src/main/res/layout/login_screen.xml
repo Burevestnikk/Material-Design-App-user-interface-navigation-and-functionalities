@@ -59,7 +59,7 @@
         tools:ignore="HardcodedText,MissingConstraints,VisualLintBounds" />
 
     <TextView
-        android:id="@+id/textRegistrationTitle"
+        android:id="@+id/textLoginTitle"
         android:layout_width="match_parent"
         android:layout_height="34dp"
         android:layout_marginStart="10dp"
@@ -79,6 +79,8 @@
 
     <EditText
         android:id="@+id/editRegistrationTextEmailAddress"
+        android:hint="Email"
+        android:textColorHint="@color/white"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:layout_marginStart="10dp"
@@ -94,7 +96,10 @@
         tools:text="Email" />
 
     <EditText
+
         android:id="@+id/editRegistrationTextPassword"
+        android:hint="Password"
+        android:textColorHint="@color/white"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:layout_marginStart="10dp"

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#13172C"
+    tools:context=".ErrorMessagesInternet"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/textErrorMessagesInternetVersion"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:text="version 1.0.0"
+        android:textAlignment="center"
+        android:textColor="#a6a8b5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonErrorMessagesInternet"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintBounds" />
+
+    <ImageView
+        android:id="@+id/imageErrorMessagesInternet"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="2dp"
+        android:foregroundGravity="center"
+        android:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wifi_off"
+        tools:ignore="ContentDescription,ImageContrastCheck,MissingConstraints,UseAppTint" /><![CDATA[
+
+
+
+    app:layout_constraintStart_toStartOf="@+id/textWelcomeDescription"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintBounds" />
+
+
+
+    ]]>
+
+    <TextView
+        android:id="@+id/textErrorMessagesInternetTitle"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="Unable to connect to the internet"
+        android:textAlignment="center"
+        android:textColor="#FDFDFD"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textErrorMessagesInternetDescription"
+        app:layout_constraintEnd_toEndOf="@+id/textWelcomeDescription"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textWelcomeDescription"
+        tools:ignore="HardcodedText,MissingConstraints,UnknownIdInLayout,VisualLintBounds,VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/textErrorMessagesInternetDescription"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="There was an error connecting to the platform. Please restart your app"
+        android:textAlignment="center"
+        android:textColor="#FDFDFD"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textErrorMessagesInternetCode"
+        app:layout_constraintEnd_toEndOf="@+id/textWelcomeDescription"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textWelcomeDescription"
+        tools:ignore="HardcodedText,MissingConstraints,UnknownIdInLayout,VisualLintBounds,VisualLintOverlap,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textErrorMessagesInternetCode"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="248dp"
+        android:gravity="center"
+        android:text="Error code: 1"
+        android:textAlignment="center"
+        android:textColor="#FDFDFD"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textWelcomeDescription"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textWelcomeDescription"
+        tools:ignore="HardcodedText,MissingConstraints,UnknownIdInLayout,VisualLintBounds,VisualLintOverlap" />
+
+    <Button
+        android:id="@+id/buttonErrorMessagesInternet"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="564dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:onClick="goWelcomeScreen"
+        android:padding="10dp"
+        android:text="Try again"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonWelcomeDiscord"
+        app:layout_constraintEnd_toEndOf="@+id/buttonWelcomeDiscord"
+        app:layout_constraintStart_toStartOf="@+id/buttonWelcomeDiscord"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints,UnknownIdInLayout,VisualLintButtonSize" /><![CDATA[
+
+    tools:srcCompat="@drawable/thunderstorm" />
+
+]]>
+</androidx.constraintlayout.widget.ConstraintLayout>

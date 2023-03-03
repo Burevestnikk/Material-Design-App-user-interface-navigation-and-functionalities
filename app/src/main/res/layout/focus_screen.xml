@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#13172C"
+    android:padding="10dp"
+    tools:context=".FocusScreen">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:text="Upgrade your FiveM server with the latest and best scripts — this weekend you will save on all purchases in our store!"
+        android:textColor="#F4F1F1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="164dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintCircleRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcomeTitle2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/sale" />
+
+    <TextView
+        android:id="@+id/textWelcomeVersion2"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="version 1.0.0"
+        android:textAlignment="center"
+        android:textColor="#a6a8b5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/textWelcomeTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="Latest news"
+        android:textAlignment="center"
+        android:textColor="#FDFDFD"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textWelcomeDescription"
+        app:layout_constraintEnd_toEndOf="@+id/textWelcomeDescription"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textWelcomeDescription"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintBounds" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="228dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintCircleRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logobrowser" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="164dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonWelcomeDiscord2"
+        app:layout_constraintCircleRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/valentines" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="10dp"
+        android:text="Love is in the air and so are savings! Celebrate this Valentine's Day with a special sale from Burevestnik Development."
+        android:textColor="#F4F1F1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/buttonWelcomeDiscord2"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginBottom="52dp"
+        android:gravity="center"
+        android:onClick="goDiscord"
+        android:padding="10dp"
+        android:text="Discord"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textWelcomeVersion2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

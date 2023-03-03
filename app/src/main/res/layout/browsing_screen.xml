@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#13172C"
+    android:padding="10dp"
+    tools:context=".BrowsingScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="308dp"
+        android:layout_height="248dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:background="#0E1122"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="375dp"
+            android:layout_height="131dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:background="#181D33"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageBanner" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="308dp"
+            android:layout_height="131dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/store"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="280dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="4dp"
+            android:text="Buy Now"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            android:text="19.68 USD"
+            android:textColor="#F3EDED"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/button4"
+            app:layout_constraintStart_toStartOf="@+id/button4" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Store system"
+            android:textColor="#F3EDED"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:onClick="goAddNewItemScreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/add" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="228dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintCircleRadius="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logobrowser" />
+
+    <ImageView
+        android:id="@+id/imageBanner"
+        android:onClick="goFocusScreen"
+        android:layout_width="374dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintCircleRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/sale" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="99dp"
+        android:layout_height="39dp"
+        android:text="Profile"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="308dp"
+        android:layout_height="248dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:background="#0E1122"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBanner">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="375dp"
+            android:layout_height="131dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:background="#181D33"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageBanner"
+            tools:ignore="DuplicateIds,NotSibling" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="308dp"
+            android:layout_height="131dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/quest"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="280dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="4dp"
+            android:text="Buy Now"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            android:text="68.88 USD"
+            android:textColor="#F3EDED"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/button4"
+            app:layout_constraintStart_toStartOf="@+id/button4" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Quest system"
+            android:textColor="#F3EDED"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

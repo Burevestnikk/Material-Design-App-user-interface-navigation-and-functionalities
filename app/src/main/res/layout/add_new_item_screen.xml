@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#13172C"
+    android:padding="10dp"
+    tools:context=".AddNewItemScreen">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="228dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintCircleRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logobrowser" />
+
+    <TextView
+        android:id="@+id/textLoginVersion2"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="version 1.0.0"
+        android:textAlignment="center"
+        android:textColor="#a6a8b5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintBounds" />
+
+    <Button
+        android:id="@+id/buttonNewItem"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="52dp"
+        android:gravity="center"
+        android:onClick="goBrowsingScreen"
+        android:padding="10dp"
+        android:text="Add new item"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textLoginVersion2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonWelcomeDiscord"
+        app:layout_constraintTop_toBottomOf="@+id/price"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="314dp"
+        android:layout_height="210dp"
+        android:background="#0E1122"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.102">
+
+        <TextView
+            android:id="@+id/textLoginTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:gravity="center"
+            android:text="Add an image"
+            android:textAlignment="center"
+            android:textColor="#FDFDFD"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText,MissingConstraints,VisualLintBounds" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="171dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="4dp"
+            android:text="Add image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLoginTitle2"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/Price"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="11dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="text"
+        android:textColor="#FDFDFD"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+        tools:text="Title" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="169dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="2dp"
+        android:text="Add package"
+        app:layout_constraintEnd_toEndOf="@+id/buttonNewItem"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
+
+    <TextView
+        android:id="@+id/textLoginTitle3"
+        android:layout_width="165dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="Package"
+        android:textAlignment="viewStart"
+        android:textColor="#FDFDFD"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/price"
+        app:layout_constraintTop_toBottomOf="@+id/price"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintBounds" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="number"
+        android:textColor="#FDFDFD"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price2"
+        tools:text="Price" />
+
+    <EditText
+        android:id="@+id/price2"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textImeMultiLine"
+        android:textColor="#FDFDFD"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Price"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -59,7 +59,7 @@
         tools:ignore="HardcodedText,MissingConstraints,VisualLintBounds" />
 
     <TextView
-        android:id="@+id/textRegistrationTitle"
+        android:id="@+id/textLoginTitle"
         android:layout_width="match_parent"
         android:layout_height="34dp"
         android:layout_marginStart="10dp"
