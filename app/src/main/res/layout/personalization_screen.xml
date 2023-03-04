@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#13172C"
+    android:padding="10dp"
+    tools:context=".PersonalizationScreen">
+
+    <Button
+        android:id="@+id/buttonRegistrationCreateAccount2"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:onClick="logoutdevices"
+        android:padding="10dp"
+        android:text="Log out all devices"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonWelcomeDiscord"
+        app:layout_constraintEnd_toEndOf="@+id/buttonWelcomeDiscord"
+        app:layout_constraintStart_toStartOf="@+id/buttonWelcomeDiscord"
+        app:layout_constraintTop_toBottomOf="@+id/editRegistrationTextEmailAddress5"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textLoginVersion3"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="version 1.0.0"
+        android:textAlignment="center"
+        android:textColor="#a6a8b5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintBounds" />
+
+    <EditText
+        android:id="@+id/editRegistrationTextEmailAddress2"
+        android:layout_width="211dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="Profile"
+        android:inputType="textEmailAddress"
+        android:textColor="#FDFDFD"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editRegistrationTextPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        tools:text="Profile" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintCircleRadius="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logobrowser" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="logoutdevices"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toEndOf="@+id/editRegistrationTextEmailAddress2"
+        app:layout_constraintTop_toTopOf="@+id/editRegistrationTextEmailAddress2" />
+
+    <EditText
+        android:id="@+id/editRegistrationTextEmailAddress4"
+        android:layout_width="211dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#FDFDFD"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editRegistrationTextPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editRegistrationTextEmailAddress2"
+        tools:text="Email" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="8dp"
+        android:onClick="logoutdevices"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="@+id/button6"
+        app:layout_constraintStart_toEndOf="@+id/editRegistrationTextEmailAddress4"
+        app:layout_constraintTop_toTopOf="@+id/editRegistrationTextEmailAddress4" />
+
+    <EditText
+        android:id="@+id/editRegistrationTextEmailAddress5"
+        android:layout_width="211dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textEmailAddress"
+        android:textColor="#FDFDFD"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editRegistrationTextPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editRegistrationTextEmailAddress4"
+        tools:text="Password" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="8dp"
+        android:onClick="logoutdevices"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="@+id/button7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editRegistrationTextEmailAddress5"
+        app:layout_constraintTop_toTopOf="@+id/editRegistrationTextEmailAddress5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
