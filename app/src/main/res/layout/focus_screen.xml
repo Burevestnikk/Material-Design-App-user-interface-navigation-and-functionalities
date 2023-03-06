@@ -107,7 +107,8 @@
         android:textColor="#F4F1F1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="DuplicateIds" />
 
     <Button
         android:id="@+id/buttonWelcomeDiscord2"

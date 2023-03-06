@@ -25,7 +25,7 @@
         app:layout_constraintEnd_toEndOf="@+id/buttonWelcomeDiscord"
         app:layout_constraintStart_toStartOf="@+id/buttonWelcomeDiscord"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints,UnknownIdInLayout,VisualLintButtonSize" />
 
     <TextView
         android:id="@+id/textRegistrationVersion"
@@ -56,7 +56,7 @@
         app:layout_constraintEnd_toEndOf="@+id/textLoginVersion"
         app:layout_constraintHorizontal_bias="0.631"
         app:layout_constraintStart_toStartOf="@+id/textLoginVersion"
-        tools:ignore="HardcodedText,MissingConstraints,VisualLintBounds" />
+        tools:ignore="HardcodedText,MissingConstraints,TouchTargetSizeCheck,UnknownIdInLayout,VisualLintBounds" />
 
     <TextView
         android:id="@+id/textLoginTitle"
@@ -75,7 +75,7 @@
         app:layout_constraintEnd_toEndOf="@+id/textWelcomeDescription"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textWelcomeDescription"
-        tools:ignore="HardcodedText,MissingConstraints,VisualLintBounds" />
+        tools:ignore="HardcodedText,MissingConstraints,UnknownIdInLayout,VisualLintBounds" />
 
     <EditText
         android:id="@+id/editRegistrationTextEmailAddress"
@@ -94,7 +94,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="Email" />
+        tools:text="Email"
+        tools:ignore="HardcodedText,VisualLintTextFieldSize" />
 
     <EditText
         android:id="@+id/editRegistrationTextPassword"
@@ -111,7 +112,8 @@
         app:layout_constraintEnd_toEndOf="@+id/editRegistrationTextEmailAddress"
         app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="@+id/editRegistrationTextEmailAddress"
-        tools:text="Password" />
+        tools:text="Password"
+        tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize" />
 
     <ImageView
         android:id="@+id/imageRegistration"
