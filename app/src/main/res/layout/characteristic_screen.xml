@@ -147,17 +147,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+    <VideoView
         android:id="@+id/videoView"
         android:layout_width="357dp"
         android:layout_height="144dp"
         android:layout_marginStart="10dp"
-        app:videoId="h5hi5nWpiTM"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toTopOf="@+id/textWelcomeVersion3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/textView12"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
